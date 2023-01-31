@@ -570,6 +570,7 @@ h6 {
 }
 
 .nav-header__link {
+  cursor: pointer;
   color: #17181C;
   font-weight: 600;
   text-transform: uppercase;
@@ -676,6 +677,57 @@ h6 {
   color: #17181C;
   text-transform: none;
   font-weight: 400;
+}
+
+.link-nav-header {
+  padding: 1.4375rem 0rem;
+}
+
+.link-nav-header__dropmenu {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 0.5s ease 0s;
+  -o-transition: opacity 0.5s ease 0s;
+  transition: opacity 0.5s ease 0s;
+  position: absolute;
+  top: 4.0625rem;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 16.25rem;
+  background-color: #FFFFFF;
+}
+
+.link-nav-header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #17181C;
+  text-transform: none;
+  padding: 1.3125rem 1.4375rem;
+}
+
+.link-nav-header__item::before {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  position: absolute;
+  right: 1.5625rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.link-nav-header__item:not(:last-child) {
+  border-bottom: 1px solid #EBECF2;
 }
 
 /*
@@ -1231,6 +1283,7 @@ h6 {
   -webkit-box-shadow: 0px 8px 20px rgba(19, 21, 22, 0.05);
           box-shadow: 0px 8px 20px rgba(19, 21, 22, 0.05);
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .cart-products__image {
@@ -1775,6 +1828,7 @@ h6 {
   border-radius: 60px;
   width: 57px;
   height: 6px;
+  cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {
@@ -1824,6 +1878,19 @@ h6 {
   }
 
   .item-dropmenu-nav__item:hover {
+    color: #004A8C;
+  }
+
+  .link-nav-header:hover .link-nav-header__dropmenu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    -webkit-transition: opacity 0.5s ease 0s;
+    -o-transition: opacity 0.5s ease 0s;
+    transition: opacity 0.5s ease 0s;
+  }
+
+  .link-nav-header__item:hover {
     color: #004A8C;
   }
 
