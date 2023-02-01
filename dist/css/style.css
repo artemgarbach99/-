@@ -336,7 +336,7 @@ h6 {
   position: relative;
 }
 
-.block-main-header__input input {
+.block-main-header__input-field {
   width: 21.875rem;
   background-color: #FFFFFF;
   border: 1px solid #E5E9F6;
@@ -346,32 +346,33 @@ h6 {
   padding: 1.3125rem 1.4375rem;
 }
 
-.block-main-header__input input::-webkit-input-placeholder {
+.block-main-header__input-field::-webkit-input-placeholder {
   color: #6D738B;
 }
 
-.block-main-header__input input::-moz-placeholder {
+.block-main-header__input-field::-moz-placeholder {
   color: #6D738B;
 }
 
-.block-main-header__input input:-ms-input-placeholder {
+.block-main-header__input-field:-ms-input-placeholder {
   color: #6D738B;
 }
 
-.block-main-header__input input::-ms-input-placeholder {
+.block-main-header__input-field::-ms-input-placeholder {
   color: #6D738B;
 }
 
-.block-main-header__input input::placeholder {
+.block-main-header__input-field::placeholder {
   color: #6D738B;
 }
 
-.block-main-header__input input._form-focus {
+.block-main-header__input-field._form-focus {
   outline: none;
   border-color: #004A8C;
 }
 
 .block-main-header__seach {
+  display: block;
   position: absolute;
   right: 0.9375rem;
 }
@@ -786,6 +787,10 @@ h6 {
   padding-bottom: 4.375rem;
 }
 
+.footer__body {
+  padding-bottom: 1.5625rem;
+}
+
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -970,6 +975,34 @@ h6 {
       -ms-flex-align: end;
           align-items: flex-end;
   gap: 0.3125rem;
+}
+
+.line-footer {
+  padding: 0.6875rem 0rem;
+  background-color: #1B1B1B;
+}
+
+.line-footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFFFFF;
+}
+
+.line-footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
 }
 
 .main-block {
