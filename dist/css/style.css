@@ -275,6 +275,10 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3125rem;
   margin-left: auto;
 }
 
@@ -283,18 +287,10 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 0.625rem;
-  padding-right: 0.3125rem;
 }
 
 .line-header__regestr {
-  padding-left: 0.9375rem;
   position: relative;
-}
-
-.line-header__regestr::before {
-  content: "/";
-  position: absolute;
-  left: 0;
 }
 
 .main-header {
@@ -336,6 +332,10 @@ h6 {
   position: relative;
 }
 
+.block-main-header__input._form-focus .block-main-header__seach::before {
+  color: #004A8C;
+}
+
 .block-main-header__input-field {
   width: 21.875rem;
   background-color: #FFFFFF;
@@ -344,6 +344,7 @@ h6 {
           box-shadow: 0px 4px 12px rgba(236, 237, 242, 0.6);
   border-radius: 0.375rem;
   padding: 1.3125rem 1.4375rem;
+  border: 2px solid transparent;
 }
 
 .block-main-header__input-field::-webkit-input-placeholder {
@@ -368,7 +369,7 @@ h6 {
 
 .block-main-header__input-field._form-focus {
   outline: none;
-  border-color: #004A8C;
+  border: 2px solid #004A8C;
 }
 
 .block-main-header__seach {
@@ -1870,6 +1871,42 @@ h6 {
 }
 
 @media (any-hover: hover) {
+  .hover:hover {
+    color: #004A8C;
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+  }
+
+  .hover-btn:hover {
+    color: #004A8C;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-color: #004A8C;
+  }
+
+  .line-header__text:hover {
+    color: #004A8C;
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+  }
+
+  .line-header__link:hover {
+    color: #004A8C;
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+  }
+
+  .content-main-header__phone:hover {
+    color: #004A8C;
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+  }
+
   .nav-header__catalog:hover .dropmenu-nav-header {
     visibility: visible;
     opacity: 1;
@@ -1934,6 +1971,13 @@ h6 {
     background-color: #5B5B5B;
   }
 
+  .main-footer__link:hover {
+    color: #004A8C;
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+  }
+
   .catalog-products__cart:hover .catalog-products__lable {
     color: #004A8C;
     -webkit-transition: color 0.3s ease 0s;
@@ -1952,5 +1996,21 @@ h6 {
   .articles__button-prev:hover,
   .articles__button-next:hover {
     color: #004A8C;
+  }
+
+  .advantages__text a:hover {
+    color: #004A8C;
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+    border-bottom: 1px solid #004A8C;
+  }
+
+  .advantages__link:hover {
+    color: #004A8C;
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+    border-bottom: 1px solid #004A8C;
   }
 }
