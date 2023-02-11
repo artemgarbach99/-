@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230201121712">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230211222655">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +23,11 @@
 								<span class="line-header__lable h3">Ваш город:</span>
 								<a href="#" class="line-header__text h3">Казань</a>
 							</div>
-							<div class="line-header__links">
+							<div data-da=".nav-header__mobile, 768" class="line-header__links">
 								<a href="#" class="line-header__link h3">Оплата и доставка</a>
 								<a href="#" class="line-header__link h3">Контакты</a>
 							</div>
-							<div class="line-header__buttons">
+							<div data-da=".nav-header__mobile, 768" class="line-header__buttons">
 								<a href="#" class="line-header__sing h3 hover _icon-user">Вход</a>
 								<span>/</span>
 								<a href="#" class="line-header__regestr h3 hover">Регистрация</a>
@@ -42,14 +42,14 @@
 								<div class="block-main-header__logo">
 									<img data-src="img/logo.svg" alt="">
 								</div>
-								<div class="block-main-header__input">
+								<div data-da=".nav-header__body, 768" class="block-main-header__input">
 									<input autocomplete="off" type="seach" name="" data-error="" placeholder="Поиск по сайту" class="block-main-header__input-field h3">
 									<!-- <input class="block-main-header__seach _icon-seach" type="submit" value=""> -->
 									<button type="button" class="block-main-header__seach _icon-seach"></button>
 								</div>
 							</div>
-							<div class="main-header__content content-main-header">
-								<div class="content-main-header__block">
+							<div data-da=".line-header__body, 768" class="main-header__content content-main-header">
+								<div data-da=".nav-header__mobile, 992" class="content-main-header__block">
 									<div class="content-main-header__line">
 										<span class="content-main-header__day _icon-clock">Пн - Пт:</span>
 										<span class="content-main-header__clock">8:00 — 17:00</span>
@@ -65,200 +65,324 @@
 									<a href="">Как оформить заказ?</a>
 								</div>
 							</div>
+							<button type="button" class="main-header__icon icon-menu"><span></span></button>
 						</div>
 					</div>
 				</div>
 				<div class="header__nav nav-header">
+					<button type="button" class="nav-header__icon-mob icon-menu"><span></span></button>
 					<div class="nav-header__container">
-						<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
-						<nav class="nav-header__body">
-							<div class="nav-header__catalog h3 _icon-menu">
-								<span>Каталог товаров</span>
-								<div class="nav-header__dropmenu dropmenu-nav-header">
-									<div class="dropmenu-nav-header__item item-dropmenu-nav h3 _icon-arrow-right">
-										<span>АВТОКРАСКИ И ЭМАЛИ</span>
-										<div class="item-dropmenu-nav__dropmenu">
-											<a href="" class="item-dropmenu-nav__item">Автошампунь</a>
-											<a href="" class="item-dropmenu-nav__item">Антидождь</a>
-											<a href="" class="item-dropmenu-nav__item">Очиститель стекол
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Очиститель тормозов
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Преобразователь ржавчины
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Размораживатель замков
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Смазка
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Обезжириватель</a>
-											<a href="" class="item-dropmenu-nav__item">Клей</a>
-											<a href="" class="item-dropmenu-nav__item">Смывка краски</a>
+						<div class="nav-header__body">
+							<nav class="nav-header__navigation">
+								<ul class="nav-header__list">
+									<li class="nav-header__catalog">
+										<span class="nav-header__catalog-title h3 _icon-menu">Каталог товаров</span>
+										<div class="nav-header__dropmenu dropmenu-nav-header">
+											<div class="dropmenu-nav-header__item item-dropmenu-nav">
+												<span class="item-dropmenu-nav__title h3 _icon-arrow-right">АВТОКРАСКИ И
+													ЭМАЛИ</span>
+												<div class="item-dropmenu-nav__dropmenu">
+													<a href="" class="item-dropmenu-nav__item">Автошампунь</a>
+													<a href="" class="item-dropmenu-nav__item">Антидождь</a>
+													<a href="" class="item-dropmenu-nav__item">Очиститель стекол
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Очиститель тормозов
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Преобразователь ржавчины
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Размораживатель замков
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Смазка
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Обезжириватель</a>
+													<a href="" class="item-dropmenu-nav__item">Клей</a>
+													<a href="" class="item-dropmenu-nav__item">Смывка краски</a>
+												</div>
+											</div>
+											<div class="dropmenu-nav-header__item item-dropmenu-nav">
+												<span class="item-dropmenu-nav__title h3 _icon-arrow-right">АВТОХИМИЯ</span>
+												<div class="item-dropmenu-nav__dropmenu">
+													<a href="" class="item-dropmenu-nav__item">Автошампунь #2</a>
+													<a href="" class="item-dropmenu-nav__item">Антидождь #2</a>
+													<a href="" class="item-dropmenu-nav__item">Очиститель стекол #2
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Очиститель тормозов #2
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Преобразователь ржавчины #2
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Размораживатель замков #2
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Смазка #2
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Обезжириватель #2</a>
+													<a href="" class="item-dropmenu-nav__item">Клей #2</a>
+													<a href="" class="item-dropmenu-nav__item">Смывка краски #2</a>
+												</div>
+											</div>
+											<div class="dropmenu-nav-header__item item-dropmenu-nav">
+												<span class="item-dropmenu-nav__title h3 _icon-arrow-right">РАСХОДНЫЕ
+													МАТЕРИАЛЫ</span>
+												<div class="item-dropmenu-nav__dropmenu">
+													<a href="" class="item-dropmenu-nav__item">Автошампунь #3</a>
+													<a href="" class="item-dropmenu-nav__item">Антидождь #3</a>
+													<a href="" class="item-dropmenu-nav__item">Очиститель стекол #3
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Очиститель тормозов #3
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Преобразователь ржавчины #3
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Размораживатель замков #3
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Смазка #3
+													</a>
+													<a href="" class="item-dropmenu-nav__item">Обезжириватель #3</a>
+													<a href="" class="item-dropmenu-nav__item">Клей #3</a>
+													<a href="" class="item-dropmenu-nav__item">Смывка краски #3</a>
+												</div>
+											</div>
+											<a href="#" class="dropmenu-nav-header__item h3">АКСЕССУАРЫ</a>
+											<a href="#" class="dropmenu-nav-header__item h3">ИНСТРУМЕНТЫ</a>
+											<a href="#" class="dropmenu-nav-header__item h3">ОБОРУДОВАНИЕ</a>
 										</div>
-									</div>
-									<div class="dropmenu-nav-header__item item-dropmenu-nav h3 _icon-arrow-right">
-										<span>АВТОХИМИЯ</span>
-										<div class="item-dropmenu-nav__dropmenu">
-											<a href="" class="item-dropmenu-nav__item">Автошампунь #2</a>
-											<a href="" class="item-dropmenu-nav__item">Антидождь #2</a>
-											<a href="" class="item-dropmenu-nav__item">Очиститель стекол #2
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Очиститель тормозов #2
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Преобразователь ржавчины #2
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Размораживатель замков #2
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Смазка #2
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Обезжириватель #2</a>
-											<a href="" class="item-dropmenu-nav__item">Клей #2</a>
-											<a href="" class="item-dropmenu-nav__item">Смывка краски #2</a>
+									</li>
+									<li class="nav-header__item"><a href="" class="nav-header__link h3">Бренды</a></li>
+									<li class="nav-header__item"><a href="" class="nav-header__link h3">О компании</a></li>
+									<li class="nav-header__item">
+										<div class="nav-header__link link-nav-header h3 _link-arrow _icon-arrow">
+											<span class="link-nav-header__title">Информация</span>
+											<div class="link-nav-header__dropmenu">
+												<a href="#" class="link-nav-header__item h3 _icon-arrow-right">Статьи</a>
+												<a href="#" class="link-nav-header__item h3 _icon-arrow-right">Видеоконтент</a>
+											</div>
 										</div>
-									</div>
-									<div class="dropmenu-nav-header__item item-dropmenu-nav h3 _icon-arrow-right">
-										<span>РАСХОДНЫЕ МАТЕРИАЛЫ</span>
-										<div class="item-dropmenu-nav__dropmenu">
-											<a href="" class="item-dropmenu-nav__item">Автошампунь #3</a>
-											<a href="" class="item-dropmenu-nav__item">Антидождь #3</a>
-											<a href="" class="item-dropmenu-nav__item">Очиститель стекол #3
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Очиститель тормозов #3
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Преобразователь ржавчины #3
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Размораживатель замков #3
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Смазка #3
-											</a>
-											<a href="" class="item-dropmenu-nav__item">Обезжириватель #3</a>
-											<a href="" class="item-dropmenu-nav__item">Клей #3</a>
-											<a href="" class="item-dropmenu-nav__item">Смывка краски #3</a>
-										</div>
-									</div>
-									<a href="#" class="dropmenu-nav-header__item h3">АКСЕССУАРЫ</a>
-									<a href="#" class="dropmenu-nav-header__item h3">ИНСТРУМЕНТЫ</a>
-									<a href="#" class="dropmenu-nav-header__item h3">ОБОРУДОВАНИЕ</a>
-								</div>
-							</div>
-							<ul class="nav-header__list">
-								<!-- <li class="nav-header__item"><a href="" class="menu__link">Каталог товаров</a></li> -->
-								<li class="nav-header__item"><a href="" class="nav-header__link h3">Бренды</a></li>
-								<li class="nav-header__item"><a href="" class="nav-header__link h3">О компании</a></li>
-								<li class="nav-header__item">
-									<div class="nav-header__link link-nav-header h3 _link-arrow _icon-arrow">
-										<span>Информация</span>
-										<div class="link-nav-header__dropmenu">
-											<a href="#" class="link-nav-header__item h3 _icon-arrow-right">Статьи</a>
-											<a href="#" class="link-nav-header__item h3 _icon-arrow-right">Видеоконтент</a>
-										</div>
-									</div>
-								</li>
-								<li class="nav-header__item"><a href="" class="nav-header__link h3">Индустриальные краски</a>
-								</li>
-							</ul>
-						</nav>
+									</li>
+									<li class="nav-header__item"><a href="" class="nav-header__link h3">Индустриальные
+											краски</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="nav-header__mobile"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main class="page">
 			<section class="main-block">
-				<div class="main-block__ellipse01"></div>
-				<div class="main-block__ellipse02"></div>
-				<div class="main-block__ellipse03"></div>
-				<div class="main-block__ellipse04"></div>
-				<!-- <div class="main-block__container"> -->
-				<div class="main-block__slider swiper-main">
-					<div class="main-block__wrapper swiper-wrapper">
-						<div class="main-block__slide swiper-slide">
-							<div class="main-block__container">
-								<div class="main-block__body">
-									<div class="main-block__content">
-										<div class="main-block__block">
-											<span class="main-block__uptitle">Цвета любой сложности быстро и
-												качественно</span>
-											<h1 class="main-block__title">Точный подбор автокрасок</h1>
-											<p class="main-block__text">В наших лабораториях для вас мы подберем любой
-												цвет
-												в кратчайшие сроки. Срок выполнения заявки от 10 мин в зависимости от
-												сложности</p>
+				<div class="main-block__inner">
+					<div class="main-block__slider swiper-main">
+						<div class="main-block__wrapper swiper-wrapper">
+							<div class="main-block__slide slide-main-block swiper-slide">
+								<div class="slide-main-block__container">
+									<div class="slide-main-block__body">
+										<div class="slide-main-block__content">
+											<div class="slide-main-block__inner">
+												<div class="slide-main-block__block">
+													<span class="slide-main-block__uptitle">Цвета любой сложности быстро
+														и
+														качественно</span>
+													<h1 class="slide-main-block__title">Точный подбор автокрасок</h1>
+													<p class="slide-main-block__text">В наших лабораториях для вас мы
+														подберем
+														любой
+														цвет
+														в кратчайшие сроки. Срок выполнения заявки от 10 мин в
+														зависимости
+														от
+														сложности</p>
+												</div>
+												<a href="" class="slide-main-block__button hover-btn">Подробнее</a>
+											</div>
 										</div>
-										<a href="" class="main-block__btn hover-btn">Подробнее</a>
+										<div class="slide-main-block__image"><img data-src="img/main-block/01.png" alt="">
+										</div>
 									</div>
-									<div class="main-block__image"><picture><source data-srcset="img/main-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main-block/01.png" alt=""></picture></div>
 								</div>
 							</div>
-						</div>
-						<div class="main-block__slide swiper-slide">
-							<div class="main-block__container">
-								<div class="main-block__body">
-									<div class="main-block__content">
-										<div class="main-block__block">
-											<span class="main-block__uptitle">Цвета любой сложности быстро и
-												качественно</span>
-											<h1 class="main-block__title">Точный подбор автокрасок</h1>
-											<p class="main-block__text">В наших лабораториях для вас мы подберем любой
-												цвет
-												в кратчайшие сроки. Срок выполнения заявки от 10 мин в зависимости от
-												сложности</p>
+							<div class="main-block__slide slide-main-block swiper-slide">
+								<div class="slide-main-block__container">
+									<div class="slide-main-block__body">
+										<div class="slide-main-block__content">
+											<div class="slide-main-block__inner">
+												<div class="slide-main-block__block">
+													<span class="slide-main-block__uptitle">Цвета любой сложности быстро
+														и
+														качественно</span>
+													<h1 class="slide-main-block__title">Точный подбор автокрасок</h1>
+													<p class="slide-main-block__text">В наших лабораториях для вас мы
+														подберем
+														любой
+														цвет
+														в кратчайшие сроки. Срок выполнения заявки от 10 мин в
+														зависимости
+														от
+														сложности</p>
+												</div>
+												<a href="" class="slide-main-block__button hover-btn">Подробнее</a>
+											</div>
 										</div>
-										<a href="" class="main-block__btn">Подробнее</a>
+										<div class="slide-main-block__image"><img data-src="img/main-block/01.png" alt="">
+										</div>
 									</div>
-									<div class="main-block__image"><picture><source data-srcset="img/main-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main-block/01.png" alt=""></picture></div>
 								</div>
 							</div>
-						</div>
-						<div class="main-block__slide swiper-slide">
-							<div class="main-block__container">
-								<div class="main-block__body">
-									<div class="main-block__content">
-										<div class="main-block__block">
-											<span class="main-block__uptitle">Цвета любой сложности быстро и
-												качественно</span>
-											<h1 class="main-block__title">Точный подбор автокрасок</h1>
-											<p class="main-block__text">В наших лабораториях для вас мы подберем любой
-												цвет
-												в кратчайшие сроки. Срок выполнения заявки от 10 мин в зависимости от
-												сложности</p>
+							<div class="main-block__slide slide-main-block swiper-slide">
+								<div class="slide-main-block__container">
+									<div class="slide-main-block__body">
+										<div class="slide-main-block__content">
+											<div class="slide-main-block__inner">
+												<div class="slide-main-block__block">
+													<span class="slide-main-block__uptitle">Цвета любой сложности быстро
+														и
+														качественно</span>
+													<h1 class="slide-main-block__title">Точный подбор автокрасок</h1>
+													<p class="slide-main-block__text">В наших лабораториях для вас мы
+														подберем
+														любой
+														цвет
+														в кратчайшие сроки. Срок выполнения заявки от 10 мин в
+														зависимости
+														от
+														сложности</p>
+												</div>
+												<a href="" class="slide-main-block__button hover-btn">Подробнее</a>
+											</div>
 										</div>
-										<a href="" class="main-block__btn">Подробнее</a>
+										<div class="slide-main-block__image"><img data-src="img/main-block/01.png" alt="">
+										</div>
 									</div>
-									<div class="main-block__image"><picture><source data-srcset="img/main-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main-block/01.png" alt=""></picture></div>
 								</div>
 							</div>
-						</div>
-						<div class="main-block__slide swiper-slide">
-							<div class="main-block__container">
-								<div class="main-block__body">
-									<div class="main-block__content">
-										<div class="main-block__block">
-											<span class="main-block__uptitle">Цвета любой сложности быстро и
-												качественно</span>
-											<h1 class="main-block__title">Точный подбор автокрасок</h1>
-											<p class="main-block__text">В наших лабораториях для вас мы подберем любой
-												цвет
-												в кратчайшие сроки. Срок выполнения заявки от 10 мин в зависимости от
-												сложности</p>
+							<div class="main-block__slide slide-main-block swiper-slide">
+								<div class="slide-main-block__container">
+									<div class="slide-main-block__body">
+										<div class="slide-main-block__content">
+											<div class="slide-main-block__inner">
+												<div class="slide-main-block__block">
+													<span class="slide-main-block__uptitle">Цвета любой сложности быстро
+														и
+														качественно</span>
+													<h1 class="slide-main-block__title">Точный подбор автокрасок</h1>
+													<p class="slide-main-block__text">В наших лабораториях для вас мы
+														подберем
+														любой
+														цвет
+														в кратчайшие сроки. Срок выполнения заявки от 10 мин в
+														зависимости
+														от
+														сложности</p>
+												</div>
+												<a href="" class="slide-main-block__button hover-btn">Подробнее</a>
+											</div>
 										</div>
-										<a href="" class="main-block__btn">Подробнее</a>
+										<div class="slide-main-block__image"><img data-src="img/main-block/01.png" alt="">
+										</div>
 									</div>
-									<div class="main-block__image"><picture><source data-srcset="img/main-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main-block/01.png" alt=""></picture></div>
 								</div>
+							</div>
+							<!-- <div class="main-block__slide swiper-slide">
+								<div class="main-block__container">
+									<div class="main-block__body">
+										<div class="main-block__content">
+											<div class="main-block__content-body">
+												<div class="main-block__block">
+													<span class="main-block__uptitle">Цвета любой сложности быстро и
+														качественно</span>
+													<h1 class="main-block__title">Точный подбор автокрасок</h1>
+													<p class="main-block__text">В наших лабораториях для вас мы
+														подберем
+														любой
+														цвет
+														в кратчайшие сроки. Срок выполнения заявки от 10 мин в
+														зависимости
+														от
+														сложности</p>
+												</div>
+												<a href="" class="main-block__btn">Подробнее</a>
+											</div>
+										</div>
+										<div class="main-block__image"><img data-src="img/main-block/01.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-block__slide swiper-slide">
+								<div class="main-block__container">
+									<div class="main-block__body">
+										<div class="main-block__content">
+											<div class="main-block__content-body">
+												<div class="main-block__block">
+													<span class="main-block__uptitle">Цвета любой сложности быстро и
+														качественно</span>
+													<h1 class="main-block__title">Точный подбор автокрасок</h1>
+													<p class="main-block__text">В наших лабораториях для вас мы
+														подберем
+														любой
+														цвет
+														в кратчайшие сроки. Срок выполнения заявки от 10 мин в
+														зависимости
+														от
+														сложности</p>
+												</div>
+												<a href="" class="main-block__btn">Подробнее</a>
+											</div>
+										</div>
+										<div class="main-block__image"><img data-src="img/main-block/01.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-block__slide swiper-slide">
+								<div class="main-block__container">
+									<div class="main-block__body">
+										<div class="main-block__content">
+											<div class="main-block__content-body">
+												<div class="main-block__block">
+													<span class="main-block__uptitle">Цвета любой сложности быстро и
+														качественно</span>
+													<h1 class="main-block__title">Точный подбор автокрасок</h1>
+													<p class="main-block__text">В наших лабораториях для вас мы
+														подберем
+														любой
+														цвет
+														в кратчайшие сроки. Срок выполнения заявки от 10 мин в
+														зависимости
+														от
+														сложности</p>
+												</div>
+												<a href="" class="main-block__btn">Подробнее</a>
+											</div>
+										</div>
+										<div class="main-block__image"><img data-src="img/main-block/01.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+						<div class="main-block__banner banner-main-block">
+							<div class="banner-main-block__text">
+								<span class="banner-main-block__color">Подбор цвета</span>
+								<span class="banner-main-block__time">от 10 минут</span>
+							</div>
+							<div class="banner-main-block__img">
+								<img data-src="img/main-block/banner.png" alt="">
 							</div>
 						</div>
 					</div>
-					<div class="main-block__pagination"></div>
-					<div class="main-block__banner">
-						<div class="main-block__banner-text">
-							<span class="main-block__banner-color">Подбор цвета</span>
-							<span class="main-block__banner-time">от 10 минут</span>
-						</div>
-						<div class="main-block__banner-img">
-							<picture><source data-srcset="img/main-block/banner.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/main-block/banner.png" alt=""></picture>
+					<div class="main-block__bottom bottom-main-block">
+						<div class="bottom-main-block__container">
+							<div class="bottom-main-block__row">
+								<div class="bottom-main-block__pagination"></div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- </div> -->
+				<div class="main-block__ellipses ellipses-main-block">
+					<div class="ellipses-main-block__ellipse _01"></div>
+					<div class="ellipses-main-block__ellipse _02"></div>
+					<div class="ellipses-main-block__ellipse _03"></div>
+					<div class="ellipses-main-block__ellipse _04"></div>
+				</div>
 			</section>
 			<section class="catalog-products">
 				<div class="catalog-products__container">
@@ -277,7 +401,7 @@
 									</div>
 								</div>
 								<div class="catalog-products__img">
-									<picture><source data-srcset="img/catalog-products/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-products/01.png" alt=""></picture>
+									<img data-src="img/catalog-products/01.png" alt="">
 								</div>
 							</a>
 							<a href="#" class="catalog-products__cart">
@@ -296,7 +420,7 @@
 									</div>
 								</div>
 								<div class="catalog-products__img">
-									<picture><source data-srcset="img/catalog-products/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-products/02.png" alt=""></picture>
+									<img data-src="img/catalog-products/02.png" alt="">
 								</div>
 							</a>
 						</div>
@@ -316,7 +440,7 @@
 									</div>
 								</div>
 								<div class="catalog-products__img">
-									<picture><source data-srcset="img/catalog-products/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-products/03.png" alt=""></picture>
+									<img data-src="img/catalog-products/03.png" alt="">
 								</div>
 							</a>
 							<a href="#" class="catalog-products__cart">
@@ -334,7 +458,7 @@
 									</div>
 								</div>
 								<div class="catalog-products__img">
-									<picture><source data-srcset="img/catalog-products/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-products/04.png" alt=""></picture>
+									<img data-src="img/catalog-products/04.png" alt="">
 								</div>
 							</a>
 						</div>
@@ -354,7 +478,7 @@
 									</div>
 								</div>
 								<div class="catalog-products__img">
-									<picture><source data-srcset="img/catalog-products/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-products/05.png" alt=""></picture>
+									<img data-src="img/catalog-products/05.png" alt="">
 								</div>
 							</a>
 							<a href="#" class="catalog-products__cart">
@@ -372,7 +496,7 @@
 									</div>
 								</div>
 								<div class="catalog-products__img">
-									<picture><source data-srcset="img/catalog-products/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-products/06.png" alt=""></picture>
+									<img data-src="img/catalog-products/06.png" alt="">
 								</div>
 							</a>
 						</div>
@@ -382,21 +506,233 @@
 			<section class="cart-products _blue">
 				<div class="cart-products__container">
 					<div class="cart-products__body">
-						<h2 class="cart-products__title">Новые поступления</h2>
+						<h2 class="cart-products__title h1">Новые поступления</h2>
 						<div class="cart-products__inner">
 							<div class="cart-products__slider swiper-carts-new">
 								<div class="cart-products__swiper swiper-wrapper">
 									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/new/01.png" alt="">
+											<div class="image-cart-products__tips">
+												<span class="image-cart-products__tip _hit">Хит</span>
+											</div>
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
+													S27315
+													Schtaer</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">24 923, 70 руб</span>
+													<span class="cart-products__price-old">37 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/new/02.png" alt="">
+											<div class="image-cart-products__tips">
+												<span class="image-cart-products__tip _hit">Хит</span>
+												<span class="image-cart-products__tip _new">Новинка</span>
+												<span class="image-cart-products__tip _sale">Акция</span>
+											</div>
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
+													S27315
+													Schtaer
+													Pro Expert 2M</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+													<a href="#" class="cart-products__price-backet">В корзине — 1 шт</a>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/new/03.png" alt="">
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _white _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _white _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Портативная машинка
+													пневматическая
+													S27315</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/new/04.png" alt="">
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Портативная машинка
+													пневматическая
+													S27315</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/new/01.png" alt="">
+											<div class="image-cart-products__tips">
+												<span class="image-cart-products__tip _hit">Хит</span>
+											</div>
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
+													S27315
+													Schtaer</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">24 923, 70 руб</span>
+													<span class="cart-products__price-old">37 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/new/02.png" alt="">
+											<div class="image-cart-products__tips">
+												<span class="image-cart-products__tip _hit">Хит</span>
+												<span class="image-cart-products__tip _new">Новинка</span>
+												<span class="image-cart-products__tip _sale">Акция</span>
+											</div>
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
+													S27315
+													Schtaer
+													Pro Expert 2M</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+													<a href="#" class="cart-products__price-backet">В корзине — 1 шт</a>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/new/03.png" alt="">
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _white _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _white _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Портативная машинка
+													пневматическая
+													S27315</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/new/04.png" alt="">
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Портативная машинка
+													пневматическая
+													S27315</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="cart-products__slide swiper-slide">
 										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/new/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/new/01.png" alt=""></picture>
+											<img data-src="img/cart-products/new/01.png" alt="">
 											<div class="cart-products__image-tips">
 												<span class="cart-products__image-hit">Хит</span>
-												<!-- <span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span> -->
 											</div>
 											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
+												<button type="submit"
+													class="cart-products__image-favorite _icon-favorite-blank"></button>
+												<button type="submit"
+													class="cart-products__image-seach _icon-seach-blank"></button>
 											</div>
 										</div>
 										<div class="cart-products__block">
@@ -417,15 +753,17 @@
 									</div>
 									<div class="cart-products__slide swiper-slide">
 										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/new/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/new/02.png" alt=""></picture>
+											<img data-src="img/cart-products/new/02.png" alt="">
 											<div class="cart-products__image-tips">
 												<span class="cart-products__image-hit">Хит</span>
 												<span class="cart-products__image-new">Новинка</span>
 												<span class="cart-products__image-sale">Акция</span>
 											</div>
 											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
+												<button type="submit"
+													class="cart-products__image-favorite _icon-favorite-blank"></button>
+												<button type="submit"
+													class="cart-products__image-seach _icon-seach-blank"></button>
 											</div>
 										</div>
 										<div class="cart-products__block">
@@ -448,15 +786,12 @@
 									</div>
 									<div class="cart-products__slide swiper-slide">
 										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/new/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/new/03.png" alt=""></picture>
-											<!-- <div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div> -->
+											<img data-src="img/cart-products/new/03.png" alt="">
 											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _white _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _white _icon-seach-blank"></button>
+												<button type="submit"
+													class="cart-products__image-favorite _white _icon-favorite-blank"></button>
+												<button type="submit"
+													class="cart-products__image-seach _white _icon-seach-blank"></button>
 											</div>
 										</div>
 										<div class="cart-products__block">
@@ -470,7 +805,6 @@
 												<div class="cart-products__price">
 													<span class="cart-products__price-current">3 923, 70 руб</span>
 													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<!-- <a href="#" class="cart-products__price-backet">В корзине — 1 шт</a> -->
 												</div>
 												<button type="submit" class="cart-products__button">В корзину</button>
 											</div>
@@ -478,15 +812,12 @@
 									</div>
 									<div class="cart-products__slide swiper-slide">
 										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/new/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/new/04.png" alt=""></picture>
-											<!-- <div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div> -->
+											<img data-src="img/cart-products/new/04.png" alt="">
 											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
+												<button type="submit"
+													class="cart-products__image-favorite _icon-favorite-blank"></button>
+												<button type="submit"
+													class="cart-products__image-seach _icon-seach-blank"></button>
 											</div>
 										</div>
 										<div class="cart-products__block">
@@ -500,136 +831,17 @@
 												<div class="cart-products__price">
 													<span class="cart-products__price-current">3 923, 70 руб</span>
 													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<!-- <a href="#" class="cart-products__price-backet">В корзине — 1 шт</a> -->
 												</div>
 												<button type="submit" class="cart-products__button">В корзину</button>
 											</div>
 										</div>
-									</div>
-									<div class="cart-products__slide swiper-slide">
-										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/new/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/new/01.png" alt=""></picture>
-											<div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<!-- <span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span> -->
-											</div>
-											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
-											</div>
-										</div>
-										<div class="cart-products__block">
-											<div class="cart-products__text">
-												<h4 class="cart-products__lable">Schtaer</h4>
-												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
-													S27315
-													Schtaer</span>
-											</div>
-											<div class="cart-products__bottom">
-												<div class="cart-products__price">
-													<span class="cart-products__price-current">24 923, 70 руб</span>
-													<span class="cart-products__price-old">37 302, 50 руб</span>
-												</div>
-												<button type="submit" class="cart-products__button">В корзину</button>
-											</div>
-										</div>
-									</div>
-									<div class="cart-products__slide swiper-slide">
-										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/new/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/new/02.png" alt=""></picture>
-											<div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div>
-											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
-											</div>
-										</div>
-										<div class="cart-products__block">
-											<div class="cart-products__text">
-												<h4 class="cart-products__lable">Schtaer</h4>
-												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
-													S27315
-													Schtaer
-													Pro Expert 2M</span>
-											</div>
-											<div class="cart-products__bottom">
-												<div class="cart-products__price">
-													<span class="cart-products__price-current">3 923, 70 руб</span>
-													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<a href="#" class="cart-products__price-backet">В корзине — 1 шт</a>
-												</div>
-												<button type="submit" class="cart-products__button">В корзину</button>
-											</div>
-										</div>
-									</div>
-									<div class="cart-products__slide swiper-slide">
-										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/new/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/new/03.png" alt=""></picture>
-											<!-- <div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div> -->
-											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _white _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _white _icon-seach-blank"></button>
-											</div>
-										</div>
-										<div class="cart-products__block">
-											<div class="cart-products__text">
-												<h4 class="cart-products__lable">Schtaer</h4>
-												<span class="cart-products__sublable h3">Портативная машинка
-													пневматическая
-													S27315</span>
-											</div>
-											<div class="cart-products__bottom">
-												<div class="cart-products__price">
-													<span class="cart-products__price-current">3 923, 70 руб</span>
-													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<!-- <a href="#" class="cart-products__price-backet">В корзине — 1 шт</a> -->
-												</div>
-												<button type="submit" class="cart-products__button">В корзину</button>
-											</div>
-										</div>
-									</div>
-									<div class="cart-products__slide swiper-slide">
-										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/new/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/new/04.png" alt=""></picture>
-											<!-- <div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div> -->
-											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
-											</div>
-										</div>
-										<div class="cart-products__block">
-											<div class="cart-products__text">
-												<h4 class="cart-products__lable">Schtaer</h4>
-												<span class="cart-products__sublable h3">Портативная машинка
-													пневматическая
-													S27315</span>
-											</div>
-											<div class="cart-products__bottom">
-												<div class="cart-products__price">
-													<span class="cart-products__price-current">3 923, 70 руб</span>
-													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<!-- <a href="#" class="cart-products__price-backet">В корзине — 1 шт</a> -->
-												</div>
-												<button type="submit" class="cart-products__button">В корзину</button>
-											</div>
-										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
-							<button type="button" class="cart-products__button-prev button-new-prev _icon-arrow-right"></button>
-							<button type="button" class="cart-products__button-next button-new-next _icon-arrow-right"></button>
+							<div class="cart-products__buttons">
+								<button type="button" class="cart-products__button-prev button-new-prev _icon-arrow-right"></button>
+								<button type="button" class="cart-products__button-next button-new-next _icon-arrow-right"></button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -637,21 +849,233 @@
 			<section class="cart-products">
 				<div class="cart-products__container">
 					<div class="cart-products__body">
-						<h2 class="cart-products__title">Хиты продаж</h2>
+						<h2 class="cart-products__title h1">Хиты продаж</h2>
 						<div class="cart-products__inner">
 							<div class="cart-products__slider swiper-carts-hits">
 								<div class="cart-products__swiper swiper-wrapper">
 									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/hits/01.png" alt="">
+											<div class="image-cart-products__tips">
+												<span class="image-cart-products__tip _hit">Хит</span>
+											</div>
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
+													S27315
+													Schtaer</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">24 923, 70 руб</span>
+													<span class="cart-products__price-old">37 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/hits/02.png" alt="">
+											<div class="image-cart-products__tips">
+												<span class="image-cart-products__tip _hit">Хит</span>
+												<span class="image-cart-products__tip _new">Новинка</span>
+												<span class="image-cart-products__tip _sale">Акция</span>
+											</div>
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
+													S27315
+													Schtaer
+													Pro Expert 2M</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+													<a href="#" class="cart-products__price-backet">В корзине — 1 шт</a>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/hits/03.png" alt="">
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Портативная машинка
+													пневматическая
+													S27315</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/hits/04.png" alt="">
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Портативная машинка
+													пневматическая
+													S27315</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/hits/01.png" alt="">
+											<div class="image-cart-products__tips">
+												<span class="image-cart-products__tip _hit">Хит</span>
+											</div>
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
+													S27315
+													Schtaer</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">24 923, 70 руб</span>
+													<span class="cart-products__price-old">37 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/hits/02.png" alt="">
+											<div class="image-cart-products__tips">
+												<span class="image-cart-products__tip _hit">Хит</span>
+												<span class="image-cart-products__tip _new">Новинка</span>
+												<span class="image-cart-products__tip _sale">Акция</span>
+											</div>
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
+													S27315
+													Schtaer
+													Pro Expert 2M</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+													<a href="#" class="cart-products__price-backet">В корзине — 1 шт</a>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/hits/03.png" alt="">
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Портативная машинка
+													пневматическая
+													S27315</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart-products__slide swiper-slide">
+										<a href="#" class="cart-products__image image-cart-products">
+											<img data-src="img/cart-products/hits/04.png" alt="">
+											<div class="image-cart-products__buttons">
+												<button type="submit" class="image-cart-products__favorite _icon-favorite-blank"></button>
+												<button type="submit" class="image-cart-products__seach _icon-seach-blank"></button>
+											</div>
+										</a>
+										<div class="cart-products__block">
+											<div class="cart-products__text">
+												<h4 class="cart-products__lable">Schtaer</h4>
+												<span class="cart-products__sublable h3">Портативная машинка
+													пневматическая
+													S27315</span>
+											</div>
+											<div class="cart-products__bottom">
+												<div class="cart-products__price">
+													<span class="cart-products__price-current">3 923, 70 руб</span>
+													<span class="cart-products__price-old">5 302, 50 руб</span>
+												</div>
+												<button type="submit" class="cart-products__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="cart-products__slide swiper-slide">
 										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/hits/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/hits/01.png" alt=""></picture>
+											<img data-src="img/cart-products/hits/01.png" alt="">
 											<div class="cart-products__image-tips">
 												<span class="cart-products__image-hit">Хит</span>
-												<!-- <span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span> -->
 											</div>
 											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
+												<button type="submit"
+													class="cart-products__image-favorite _icon-favorite-blank"></button>
+												<button type="submit"
+													class="cart-products__image-seach _icon-seach-blank"></button>
 											</div>
 										</div>
 										<div class="cart-products__block">
@@ -672,15 +1096,17 @@
 									</div>
 									<div class="cart-products__slide swiper-slide">
 										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/hits/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/hits/02.png" alt=""></picture>
+											<img data-src="img/cart-products/hits/02.png" alt="">
 											<div class="cart-products__image-tips">
 												<span class="cart-products__image-hit">Хит</span>
 												<span class="cart-products__image-new">Новинка</span>
 												<span class="cart-products__image-sale">Акция</span>
 											</div>
 											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
+												<button type="submit"
+													class="cart-products__image-favorite _icon-favorite-blank"></button>
+												<button type="submit"
+													class="cart-products__image-seach _icon-seach-blank"></button>
 											</div>
 										</div>
 										<div class="cart-products__block">
@@ -703,15 +1129,12 @@
 									</div>
 									<div class="cart-products__slide swiper-slide">
 										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/hits/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/hits/03.png" alt=""></picture>
-											<!-- <div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div> -->
+											<img data-src="img/cart-products/hits/03.png" alt="">
 											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _white _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _white _icon-seach-blank"></button>
+												<button type="submit"
+													class="cart-products__image-favorite _icon-favorite-blank"></button>
+												<button type="submit"
+													class="cart-products__image-seach _icon-seach-blank"></button>
 											</div>
 										</div>
 										<div class="cart-products__block">
@@ -725,7 +1148,6 @@
 												<div class="cart-products__price">
 													<span class="cart-products__price-current">3 923, 70 руб</span>
 													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<!-- <a href="#" class="cart-products__price-backet">В корзине — 1 шт</a> -->
 												</div>
 												<button type="submit" class="cart-products__button">В корзину</button>
 											</div>
@@ -733,15 +1155,12 @@
 									</div>
 									<div class="cart-products__slide swiper-slide">
 										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/hits/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/hits/04.png" alt=""></picture>
-											<!-- <div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div> -->
+											<img data-src="img/cart-products/hits/04.png" alt="">
 											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
+												<button type="submit"
+													class="cart-products__image-favorite _icon-favorite-blank"></button>
+												<button type="submit"
+													class="cart-products__image-seach _icon-seach-blank"></button>
 											</div>
 										</div>
 										<div class="cart-products__block">
@@ -755,136 +1174,17 @@
 												<div class="cart-products__price">
 													<span class="cart-products__price-current">3 923, 70 руб</span>
 													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<!-- <a href="#" class="cart-products__price-backet">В корзине — 1 шт</a> -->
 												</div>
 												<button type="submit" class="cart-products__button">В корзину</button>
 											</div>
 										</div>
-									</div>
-									<div class="cart-products__slide swiper-slide">
-										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/hits/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/hits/01.png" alt=""></picture>
-											<div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<!-- <span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span> -->
-											</div>
-											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
-											</div>
-										</div>
-										<div class="cart-products__block">
-											<div class="cart-products__text">
-												<h4 class="cart-products__lable">Schtaer</h4>
-												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
-													S27315
-													Schtaer</span>
-											</div>
-											<div class="cart-products__bottom">
-												<div class="cart-products__price">
-													<span class="cart-products__price-current">24 923, 70 руб</span>
-													<span class="cart-products__price-old">37 302, 50 руб</span>
-												</div>
-												<button type="submit" class="cart-products__button">В корзину</button>
-											</div>
-										</div>
-									</div>
-									<div class="cart-products__slide swiper-slide">
-										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/hits/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/hits/02.png" alt=""></picture>
-											<div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div>
-											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
-											</div>
-										</div>
-										<div class="cart-products__block">
-											<div class="cart-products__text">
-												<h4 class="cart-products__lable">Schtaer</h4>
-												<span class="cart-products__sublable h3">Шлиф. машинка пневматическая
-													S27315
-													Schtaer
-													Pro Expert 2M</span>
-											</div>
-											<div class="cart-products__bottom">
-												<div class="cart-products__price">
-													<span class="cart-products__price-current">3 923, 70 руб</span>
-													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<a href="#" class="cart-products__price-backet">В корзине — 1 шт</a>
-												</div>
-												<button type="submit" class="cart-products__button">В корзину</button>
-											</div>
-										</div>
-									</div>
-									<div class="cart-products__slide swiper-slide">
-										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/hits/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/hits/03.png" alt=""></picture>
-											<!-- <div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div> -->
-											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _white _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _white _icon-seach-blank"></button>
-											</div>
-										</div>
-										<div class="cart-products__block">
-											<div class="cart-products__text">
-												<h4 class="cart-products__lable">Schtaer</h4>
-												<span class="cart-products__sublable h3">Портативная машинка
-													пневматическая
-													S27315</span>
-											</div>
-											<div class="cart-products__bottom">
-												<div class="cart-products__price">
-													<span class="cart-products__price-current">3 923, 70 руб</span>
-													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<!-- <a href="#" class="cart-products__price-backet">В корзине — 1 шт</a> -->
-												</div>
-												<button type="submit" class="cart-products__button">В корзину</button>
-											</div>
-										</div>
-									</div>
-									<div class="cart-products__slide swiper-slide">
-										<div class="cart-products__image">
-											<picture><source data-srcset="img/cart-products/hits/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/cart-products/hits/04.png" alt=""></picture>
-											<!-- <div class="cart-products__image-tips">
-												<span class="cart-products__image-hit">Хит</span>
-												<span class="cart-products__image-new">Новинка</span>
-												<span class="cart-products__image-sale">Акция</span>
-											</div> -->
-											<div class="cart-products__image-buttons">
-												<button type="submit" class="cart-products__image-favorite _icon-favorite-blank"></button>
-												<button type="submit" class="cart-products__image-seach _icon-seach-blank"></button>
-											</div>
-										</div>
-										<div class="cart-products__block">
-											<div class="cart-products__text">
-												<h4 class="cart-products__lable">Schtaer</h4>
-												<span class="cart-products__sublable h3">Портативная машинка
-													пневматическая
-													S27315</span>
-											</div>
-											<div class="cart-products__bottom">
-												<div class="cart-products__price">
-													<span class="cart-products__price-current">3 923, 70 руб</span>
-													<span class="cart-products__price-old">5 302, 50 руб</span>
-													<!-- <a href="#" class="cart-products__price-backet">В корзине — 1 шт</a> -->
-												</div>
-												<button type="submit" class="cart-products__button">В корзину</button>
-											</div>
-										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
-							<button type="button" class="cart-products__button-prev button-hits-prev _icon-arrow-right"></button>
-							<button type="button" class="cart-products__button-next button-hits-next _icon-arrow-right"></button>
+							<div class="cart-products__buttons">
+								<button type="button" class="cart-products__button-prev button-hits-prev _icon-arrow-right"></button>
+								<button type="button" class="cart-products__button-next button-hits-next _icon-arrow-right"></button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -898,7 +1198,7 @@
 						<div class="articles__slider swiper-articles">
 							<div class="articles__wrapper swiper-wrapper">
 								<div class="articles__slide swiper-slide">
-									<div class="articles__image-ibg"><picture><source data-srcset="img/article/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/article/01.png" alt=""></picture></div>
+									<div class="articles__image-ibg"><img data-src="img/article/01.png" alt=""></div>
 									<div class="articles__block">
 										<span class="articles__data h3">02 сентября 2022</span>
 										<h4 class="articles__lable">Как покрасить автомобиль</h4>
@@ -907,7 +1207,7 @@
 									</div>
 								</div>
 								<div class="articles__slide swiper-slide">
-									<div class="articles__image-ibg"><picture><source data-srcset="img/article/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/article/02.png" alt=""></picture></div>
+									<div class="articles__image-ibg"><img data-src="img/article/02.png" alt=""></div>
 									<div class="articles__block">
 										<span class="articles__data h3">02 сентября 2022</span>
 										<h4 class="articles__lable">Возможные дефекты
@@ -918,7 +1218,7 @@
 									</div>
 								</div>
 								<div class="articles__slide swiper-slide">
-									<div class="articles__image-ibg"><picture><source data-srcset="img/article/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/article/03.png" alt=""></picture></div>
+									<div class="articles__image-ibg"><img data-src="img/article/03.png" alt=""></div>
 									<div class="articles__block">
 										<span class="articles__data h3">02 сентября 2022</span>
 										<h4 class="articles__lable">Как покрасить автомобиль
@@ -928,7 +1228,7 @@
 									</div>
 								</div>
 								<div class="articles__slide swiper-slide">
-									<div class="articles__image-ibg"><picture><source data-srcset="img/article/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/article/01.png" alt=""></picture></div>
+									<div class="articles__image-ibg"><img data-src="img/article/01.png" alt=""></div>
 									<div class="articles__block">
 										<span class="articles__data h3">02 сентября 2022</span>
 										<h4 class="articles__lable">Как покрасить автомобиль</h4>
@@ -937,7 +1237,7 @@
 									</div>
 								</div>
 								<div class="articles__slide swiper-slide">
-									<div class="articles__image-ibg"><picture><source data-srcset="img/article/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/article/02.png" alt=""></picture></div>
+									<div class="articles__image-ibg"><img data-src="img/article/02.png" alt=""></div>
 									<div class="articles__block">
 										<span class="articles__data h3">02 сентября 2022</span>
 										<h4 class="articles__lable">Возможные дефекты
@@ -948,7 +1248,7 @@
 									</div>
 								</div>
 								<div class="articles__slide swiper-slide">
-									<div class="articles__image-ibg"><picture><source data-srcset="img/article/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/article/03.png" alt=""></picture></div>
+									<div class="articles__image-ibg"><img data-src="img/article/03.png" alt=""></div>
 									<div class="articles__block">
 										<span class="articles__data h3">02 сентября 2022</span>
 										<h4 class="articles__lable">Как покрасить автомобиль
@@ -974,7 +1274,7 @@
 						<div class="advantages__row">
 							<div class="advantages__column">
 								<div class="advantages__image">
-									<picture><source data-srcset="img/advantages/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advantages/01.png" alt=""></picture>
+									<img data-src="img/advantages/01.png" alt="">
 								</div>
 								<div class="advantages__lable _icon-line-bottom">Мы являемся
 									дилером</div>
@@ -1001,7 +1301,7 @@
 							</div>
 							<div class="advantages__column">
 								<div class="advantages__image">
-									<picture><source data-srcset="img/advantages/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advantages/01.png" alt=""></picture>
+									<img data-src="img/advantages/01.png" alt="">
 								</div>
 								<div class="advantages__lable _icon-line-bottom">НАШ АССОРТИМЕНТ
 									И СЕРВИС</div>
@@ -1011,7 +1311,7 @@
 							</div>
 							<div class="advantages__column">
 								<div class="advantages__image">
-									<picture><source data-srcset="img/advantages/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advantages/01.png" alt=""></picture>
+									<img data-src="img/advantages/01.png" alt="">
 								</div>
 								<div class="advantages__lable _icon-line-bottom">20 ЛЕТ УСПЕХА
 									НА РЫНКЕ</div>
@@ -1021,7 +1321,7 @@
 							</div>
 							<div class="advantages__column">
 								<div class="advantages__image">
-									<picture><source data-srcset="img/advantages/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advantages/01.png" alt=""></picture>
+									<img data-src="img/advantages/01.png" alt="">
 								</div>
 								<div class="advantages__lable _icon-line-bottom">Быстрая<br>
 									доставка</div>
@@ -1039,11 +1339,11 @@
 							АВТОМОБИЛЕЙ</h2>
 						<div class="description__main">
 							<div class="description__image">
-								<picture><source data-srcset="img/description/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/description/01.png" alt=""></picture>
-								<div class="description__image-text">
+								<img data-src="img/description/01.png" alt="">
+								<!-- <div class="description__image-text">
 									<p>АВТО—</p>
 									<p>ЭМАЛИ </p>
-								</div>
+								</div> -->
 							</div>
 							<div class="description__content">
 								<p class="description__text _bold">Если Ваш бизнес – это покраска или профессиональное
@@ -1074,61 +1374,79 @@
 			<div class="footer__container">
 				<div class="footer__body">
 					<div class="footer__main main-footer">
-						<div class="main-footer__column">
-							<div class="main-footer__logo">
-								<img data-src="img/footer-logo.svg" alt="">
+						<div class="main-footer__content content-main-footer">
+							<div class="content-main-footer__top">
+								<div class="content-main-footer__logo">
+									<img data-src="img/footer-logo.svg" alt="">
+								</div>
+								<div class="content-main-footer__social">
+									<a href="#" class="content-main-footer__link _vk _icon-vk"></a>
+									<a href="#" class="content-main-footer__link _insta _icon-instagram"></a>
+									<a href="#" class="content-main-footer__link _viber _icon-viber"></a>
+								</div>
 							</div>
-							<div class="main-footer__social">
-								<a href="#" class="main-footer__vk _icon-vk"></a>
-								<a href="#" class="main-footer__insta _icon-instagram"></a>
-								<a href="#" class="main-footer__viber _icon-viber"></a>
-							</div>
-							<div class="main-footer__text">
-								<p>«Авто эмали» — всё для обеспечения материалами для покраски автомобилей, оборудования
-									и инструмента для автосервисов</p>
-							</div>
-							<div class="main-footer__payment">
-								<span>Принимаем оплату</span>
-								<div class="main-footer__payment-wrapper">
-									<div class="main-footer__payment-item"><img data-src="img/svg/visa.svg" alt=""></div>
-									<div class="main-footer__payment-item"><img data-src="img/svg/mastercard.svg" alt=""></div>
-									<div class="main-footer__payment-item"><img data-src="img/svg/paypal.svg" alt=""></div>
+							<div class="content-main-footer__bottom">
+								<div class="content-main-footer__text">
+									<p>«Авто эмали» — всё для обеспечения материалами для покраски автомобилей, оборудования
+										и инструмента для автосервисов</p>
+								</div>
+								<div class="content-main-footer__payment">
+									<h4 class="content-main-footer__lable">Принимаем оплату</h4>
+									<div class="content-main-footer__line">
+										<div class="content-main-footer__item"><img data-src="img/svg/visa.svg" alt=""></div>
+										<div class="content-main-footer__item"><img data-src="img/svg/mastercard.svg" alt="">
+										</div>
+										<div class="content-main-footer__item"><img data-src="img/svg/paypal.svg" alt=""></div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="main-footer__column">
-							<h4 class="main-footer__lable h3">О компании</h4>
-							<ul class="main-footer__list">
-								<li><a href="#" class="main-footer__link">Контакты</a></li>
-								<li><a href="#" class="main-footer__link">Статьи</a></li>
-								<li><a href="#" class="main-footer__link">О нас</a></li>
-								<li><a href="#" class="main-footer__link">Сертификаты</a></li>
-								<li><a href="#" class="main-footer__link">Фото магазинов</a></li>
-								<li><a href="#" class="main-footer__link">Лаборатории
-										по подбору краски</a></li>
-							</ul>
-						</div>
-						<div class="main-footer__column">
-							<h4 class="main-footer__lable h3">Помощь</h4>
-							<ul class="main-footer__list">
-								<li><a href="#" class="main-footer__link">Как сделать заказ</a></li>
-								<li><a href="#" class="main-footer__link">Оплата и доставка</a></li>
-								<li><a href="#" class="main-footer__link">Возврат товара</a></li>
-							</ul>
-						</div>
-						<div class="main-footer__column">
-							<div class="main-footer__phone">
-								<a href="tel:+78432022106" class="hover">+7 (843) 202-21-06</a>
-								<p class="main-footer__span h3">Звоните нам</p>
+						<div data-spollers="479,max" class="main-footer__navigation">
+							<div class="main-footer__links links-main-footer">
+								<button type="button" data-spoller class="links-main-footer__lable h3">О компании</button>
+								<div class="links-main-footer__body">
+									<ul class="links-main-footer__list">
+										<li><a href="#" class="links-main-footer__link">Контакты</a></li>
+										<li><a href="#" class="links-main-footer__link">Статьи</a></li>
+										<li><a href="#" class="links-main-footer__link">О нас</a></li>
+										<li><a href="#" class="links-main-footer__link">Сертификаты</a></li>
+										<li><a href="#" class="links-main-footer__link">Фото магазинов</a></li>
+										<li><a href="#" class="links-main-footer__link">Лаборатории
+												по подбору краски</a></li>
+									</ul>
+								</div>
 							</div>
-							<button type="submit" class="main-footer__button h3 hover-btn">Обратный звонок</button>
-							<div class="main-footer__timeline">
-								<span class="main-footer__title">Пн-Пт: 8:00-17:00, Сб: 8.00-14.00</span>
-								<p class="main-footer__span h3">График работы</p>
+							<div class="main-footer__links links-main-footer">
+								<button type="button" data-spoller class="links-main-footer__lable h3">Помощь</button>
+								<div class="links-main-footer__body">
+									<ul class="links-main-footer__list">
+										<li><a href="#" class="links-main-footer__link">Как сделать заказ</a></li>
+										<li><a href="#" class="links-main-footer__link">Оплата и доставка</a></li>
+										<li><a href="#" class="links-main-footer__link">Возврат товара</a></li>
+									</ul>
+								</div>
 							</div>
-							<div class="main-footer__mail">
-								<a href="mailto:info@tatavt.ru" class="main-footer__title hover">info@tatavt.ru</a>
-								<p class="main-footer__span h3">Для электронных писем</p>
+						</div>
+						<div class="main-footer__contacts contacts-main-footer">
+							<div class="contacts-main-footer__top">
+								<div class="contacts-main-footer__phone">
+									<a href="tel:+78432022106" class="hover">+7 (843) 202-21-06</a>
+									<h4 class="contacts-main-footer__lable h3">Звоните нам</h4>
+								</div>
+								<button type="submit" class="contacts-main-footer__button h3 hover-btn">Обратный звонок</button>
+							</div>
+							<div class="contacts-main-footer__bottom">
+								<div class="contacts-main-footer__timeline">
+									<div class="contacts-main-footer__title">
+										<span>Пн-Пт: 8:00-17:00,</span>
+										<span>Сб: 8.00-14.00</span>
+									</div>
+									<p class="contacts-main-footer__lable h3">График работы</p>
+								</div>
+								<div class="contacts-main-footer__mail">
+									<a href="mailto:info@tatavt.ru" class="contacts-main-footer__title hover">info@tatavt.ru</a>
+									<p class="contacts-main-footer__lable h3">Для электронных писем</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1159,7 +1477,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20230201121712"></script>
+	<script src="js/app.min.js?_v=20230211222655"></script>
 </body>
 
 </html>
