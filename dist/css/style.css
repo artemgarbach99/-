@@ -2154,18 +2154,16 @@ h6 {
   display: none !important;
 }
 
-@media (min-width: 47.99875em) and (any-hover: hover) {
+@media (min-width: 61.99875em) and (any-hover: hover) {
   .nav-header__catalog:hover .dropmenu-nav-header {
     visibility: visible;
     opacity: 1;
-    z-index: 2;
+    z-index: 6;
     -webkit-transition: opacity 0.5s ease 0s;
     -o-transition: opacity 0.5s ease 0s;
     transition: opacity 0.5s ease 0s;
   }
-}
 
-@media (min-width: 61.99875em) and (any-hover: hover) {
   .item-dropmenu-nav:hover .item-dropmenu-nav__dropmenu {
     visibility: visible;
     opacity: 1;
@@ -2178,7 +2176,7 @@ h6 {
   .link-nav-header:hover .link-nav-header__dropmenu {
     visibility: visible;
     opacity: 1;
-    z-index: 2;
+    z-index: 6;
     -webkit-transition: opacity 0.5s ease 0s;
     -o-transition: opacity 0.5s ease 0s;
     transition: opacity 0.5s ease 0s;
@@ -2274,7 +2272,7 @@ h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 0.9375rem;
+    gap: 0.3125rem;
   }
 
   .content-main-header__line {
@@ -2423,6 +2421,10 @@ h6 {
             box-shadow: none;
     width: 100%;
     padding: 1.25rem 0.9375rem;
+  }
+
+  .item-dropmenu-nav__item {
+    font-size: 0.875rem;
   }
 
   .link-nav-header {
@@ -2703,8 +2705,14 @@ h6 {
 
 @media (max-width: 61.99875em) and (max-width: 47.99875em) {
   .nav-header {
-    width: 100%;
+    width: 70%;
     padding: 3.125rem 0.9375rem;
+  }
+}
+
+@media (max-width: 61.99875em) and (max-width: 29.99875em) {
+  .nav-header {
+    width: 100%;
   }
 }
 
@@ -2723,8 +2731,20 @@ h6 {
     margin-right: 0;
   }
 
+  .line-header__link {
+    font-size: 1.125rem;
+  }
+
   .line-header__buttons {
     margin-left: 0;
+  }
+
+  .line-header__sing {
+    font-size: 1.125rem;
+  }
+
+  .line-header__regestr {
+    font-size: 1.125rem;
   }
 
   .block-main-header__logo {
@@ -2736,6 +2756,10 @@ h6 {
         -ms-flex-order: 1;
             order: 1;
     width: 100%;
+  }
+
+  .content-main-header__day {
+    font-size: 1.125rem;
   }
 
   .content-main-header__favorite::before {

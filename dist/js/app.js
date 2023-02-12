@@ -4146,7 +4146,7 @@
                 observeParents: true,
                 slidesPerView: 4,
                 spaceBetween: 10,
-                autoHeight: true,
+                autoHeight: false,
                 speed: 800,
                 navigation: {
                     prevEl: ".cart-products__button-prev.button-new-prev",
@@ -4181,7 +4181,7 @@
                 observeParents: true,
                 slidesPerView: 4,
                 spaceBetween: 10,
-                autoHeight: true,
+                autoHeight: false,
                 speed: 800,
                 navigation: {
                     prevEl: ".cart-products__button-prev.button-hits-prev",
@@ -4216,7 +4216,7 @@
                 observeParents: true,
                 slidesPerView: 3,
                 spaceBetween: 10,
-                autoHeight: true,
+                autoHeight: false,
                 speed: 800,
                 navigation: {
                     prevEl: ".articles__button-prev",
