@@ -3233,6 +3233,18 @@ h6 {
     color: #004A8C;
   }
 
+  .catalog-products__link a:hover {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #004A8C;
+    opacity: 0.7;
+  }
+
+  .catalog-products__link a:hover::before {
+    color: #004A8C;
+  }
+
   .cart-products__lable:hover {
     color: #000000;
     -webkit-transition: color 0.3s ease 0s;
