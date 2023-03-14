@@ -1244,6 +1244,7 @@ h6 {
 .slide-main-block {
   position: relative;
   overflow: hidden;
+  min-width: 100%;
 }
 
 .slide-main-block__body {
